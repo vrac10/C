@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "string.h": "c",
+        "math.h": "c",
+        "ctype.h": "c",
+        "_ctype.h": "c",
+        "CHUTIYA1.C": "cpp"
+    }
+}

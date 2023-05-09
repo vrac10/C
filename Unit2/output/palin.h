@@ -1,0 +1,1 @@
+int ispalindrome(int n);

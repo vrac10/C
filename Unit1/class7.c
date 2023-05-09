@@ -153,19 +153,5 @@ int main(){
     //     printf("\n");
     // }
 
-    // hollow diamond
-    int n;
-    scanf("%d", &n);
-    for(int i = 1; i <= n+n-1; i++){
-        for(int j = 1; j <= i+1 ; j++){
-            if(j == 1 || j == i+1){
-                printf('*');
-            }
-           else{
-                printf(' ');
-           }
-            
-        } 
-    }
 }
 

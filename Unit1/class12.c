@@ -17,8 +17,5 @@ int main(){
         
         
 //     }
-
-//     printf("The number of words : %d\nThe number of characters : %d\nThe number of lines : %d\n", words, characters, lines);
-
     
 }
