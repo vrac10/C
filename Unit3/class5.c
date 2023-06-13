@@ -29,6 +29,7 @@ node_t *addElement(node_t*, int);
 void deleteElement(node_t* p);
 node_t *deleteFirstElement(node_t* p);
 void addEndElement(node_t* p, int n);
+void addInMiddle(node_t *p, int n);
 
 int main(){
     node_t *s;
@@ -42,14 +43,16 @@ int main(){
 
     display(s);
     //free(s);
-    s = addElement(s,20);
-    display(s);
-    deleteElement(s);
-    display(s);
-    s = deleteFirstElement(s);
-    display(s);
+    // s = addElement(s,20);
+    // display(s);
+    // deleteElement(s);
+    // display(s);
+    // s = deleteFirstElement(s);
+    // display(s);
     addEndElement(s,300);
     display(s);
+    // addInMiddle(s,25);
+    // display(s);
 
    // s = NULL;
 
@@ -107,6 +110,31 @@ void addEndElement(node_t* p, int n){
     new->info = n;
     new->link = NULL;
     x->link = new;
+
     
 
+}
+
+
+
+
+void addInMiddle(node_t *p, int n){
+    node_t *head = (node_t *) malloc(sizeof(node_t));
+    node_t *start = p;
+    head->info = n;
+    int counter = 0;
+    while(p != NULL){
+        counter++;
+        p = p->link;
+    }
+    
+    for(int i = 0; i < (counter/2) + 1; i++){
+        if(i == (counter/2)){
+            head->link = start->link;
+            start->link = head;
+        }
+        start = start->link;
+    
+    }
+    
 }
