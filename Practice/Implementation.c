@@ -1,6 +1,16 @@
 // Practice to understand how to sperate files and use maker file
 // First read some inputs then test the other functions.
 
+
+/*
+write the C code by creating a type called Book. The Book entity contains these data members:
+id, title, author, price, year of publication. Write separate functions to read details of n books and
+display it. Also include functions to do the following.
+Fetch all the details of books published in the year entered by the user.
+Fetch all the details of books whose author name is entered by the user. Display appropriate
+message if no data found.
+Separate the interface and implementation.
+*/
 #include<stdio.h>
 #include "interface.h"
 
